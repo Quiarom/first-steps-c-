@@ -1,24 +1,20 @@
 #include <iostream>
+#include<cstring>
 
 using namespace std;
 
 int main() {
 
-	int option = 0;
+	int list[] = { 100, 200, 300 }; 
 
-	cout << "Ingrese el número 1 o 2: ";
-	cin >> option;
+	int limit = sizeof(list) / sizeof(list[0]);
 	
-	switch(option) {
-		case 1:
-				cout << "You are the number 1";
-				break;
-		case 2:
-				cout << "You are the number 2";
-				break;
-		default:
-				cout << "You are nothing"; 
-				break;
+	for (int i = 0; i < limit; i += 1) {
+		cout << list[i] << endl;
 
+		if (list[i] == 200) {
+			break;
+		}
 	}
+
 }
