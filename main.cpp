@@ -4,17 +4,21 @@ using namespace std;
 
 int main() {
 
-	int age = 0;
+	int option = 0;
 
-	cout << "age: ";
+	cout << "Ingrese el número 1 o 2: ";
+	cin >> option;
+	
+	switch(option) {
+		case 1:
+				cout << "You are the number 1";
+				break;
+		case 2:
+				cout << "You are the number 2";
+				break;
+		default:
+				cout << "You are nothing"; 
+				break;
 
-	cin >> age;
-
-	if (age < 18 || age > 40) {
-		cout << "No Puedes votar";
-	} else {
-		cout << "Puedes votar";
 	}
-	
-	
 }
