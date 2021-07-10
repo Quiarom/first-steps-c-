@@ -5,15 +5,10 @@ using std::cout;
 
 int main() {
 
-	bool yes = true;
+	int edad = 0;
+	edad = 8;
 
-	int number = 15;
-
-	float floatNumber = 2.5;
-
-	double doubleFloatNumber = 2.53;
-
-	char letterA = 'a';
+	cout << edad;
 
 
 }
