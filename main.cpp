@@ -1,21 +1,19 @@
 #include <iostream>
 
 using namespace std;
-using std::cout;
-using std::endl;
+
 
 int main() {
 
-	int age = 0;
-	age = 18;
+	int a = 2;
+	int b = 3;
+	int result = a < b;
 
-	const char letter = 'a';
+	int ages[] = { 24, 40, 7 };
 
-	int ages_people[] = { 18, 24, 16 };
-	ages_people[1] = 26;
 
-	cout << age << endl;
-	cout << letter << endl;
-	cout << ages_people[1] << endl;
+	cout << sizeof(ages) / sizeof(ages[0]) << endl;
+
+	
 
 }
