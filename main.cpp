@@ -4,13 +4,17 @@ using namespace std;
 
 int main() {
 
-	int edad = 0;
+	int age = 0;
 
-	cout << "Edad: ";
+	cout << "age: ";
 
-	cin >> edad;
+	cin >> age;
 
-	cout << "Tu edad es: " << edad << endl;
+	if (age < 18 || age > 40) {
+		cout << "No Puedes votar";
+	} else {
+		cout << "Puedes votar";
+	}
 	
 	
 }
