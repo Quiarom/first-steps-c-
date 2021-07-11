@@ -5,16 +5,20 @@ using namespace std;
 
 int main() {
 
-	int list[] = { 100, 200, 300 }; 
+	char result = ' ';
 
-	int limit = sizeof(list) / sizeof(list[0]);
-	
-	for (int i = 0; i < limit; i += 1) {
-		cout << list[i] << endl;
+	do {
 
-		if (list[i] == 200) {
-			break;
+		cout << "¿end?" << endl;
+
+		cin >> result;
+
+		if (result == 'y') {
+			cout << "Bye Baby";
+		} else if (result == 'n') {
+			cout << "UnU" << endl;
 		}
-	}
 
+	} while(true);
+	
 }
