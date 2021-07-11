@@ -3,22 +3,16 @@
 
 using namespace std;
 
-int main() {
 
-	char result = ' ';
+int sum(int a, int b) {
+	return a + b;
+}
 
-	do {
+int mult(int a, int b) {
+	return a * b;
+}
 
-		cout << "¿end?" << endl;
-
-		cin >> result;
-
-		if (result == 'y') {
-			cout << "Bye Baby";
-		} else if (result == 'n') {
-			cout << "UnU" << endl;
-		}
-
-	} while(true);
-	
+int main () {
+	cout << sum(2, 3) << endl;
+	cout << mult(4, 4) << endl;
 }
